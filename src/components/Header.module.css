@@ -1,0 +1,9 @@
+.container {
+  width: 100vw; /* full screen width */
+  max-width: 100%;
+  overflow-x: hidden; /* prevents horizontal scroll */
+  height: 916px; /* or 100vh if you want full screen height */
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+}

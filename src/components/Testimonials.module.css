@@ -1,0 +1,92 @@
+.wrapper {
+  padding: 4rem 1rem;
+  max-width: 1140px;
+  margin: 0 auto;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+}
+
+.heading {
+  font-size: 28px;
+  font-weight: 800;
+  color: #252b42;
+  margin-bottom: 2rem;
+}
+
+.testimonial {
+  margin-bottom: 3rem;
+}
+
+.avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+
+.stars {
+  color: #f3cd03;
+  font-size: 18px;
+  margin-bottom: 1rem;
+}
+
+.message {
+  font-size: 16px;
+  color: #737373;
+  margin-bottom: 1rem;
+  padding: 0 1rem;
+  line-height: 1.6;
+}
+
+.name {
+  font-weight: 700;
+  color: #252b42;
+  font-size: 16px;
+}
+
+.role {
+  font-size: 14px;
+  color: #737373;
+  margin-top: 4px;
+}
+
+/* ✅ Testimonial gallery grid */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.gallery img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.2s ease-in-out;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+}
+
+/* ✅ Responsive adjustments */
+@media (max-width: 768px) {
+  .wrapper {
+    padding: 2rem 1rem;
+  }
+
+  .heading {
+    font-size: 22px;
+  }
+
+  .message {
+    font-size: 14px;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+  }
+}

@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* Top dark bar */
+.navDark {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 24px;
+  width: 100%;
+  background: #23856d;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.contact {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.social {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.mulSocial {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Main nav bar */
+.navLight {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 24px;
+  width: 100%;
+  background: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  color: #000;
+}
+
+.navLight span:first-child {
+  font-size: 24px;
+  font-weight: bold;
+  color: #252b42;
+}
+
+/* Collapse nav container */
+.colloapesNav {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+/* Left nav items (Home, Shop, etc.) */
+.navBarNav {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  padding: 0;
+  margin: 0;
+}
+
+.navBarNav li {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 14px;
+  color: #737373;
+  transition: color 0.2s ease-in-out;
+}
+
+.navBarNav li:hover {
+  color: #23856d;
+}
+
+/* Responsiveness*/
+@media (max-width: 768px) {
+  .navDark,
+  .navLight,
+  .colloapesNav {
+    flex-direction: column;
+    gap: 12px;
+    text-align: center;
+  }
+
+  .navBarNav {
+    flex-direction: column;
+  }
+
+  .contact,
+  .social {
+    justify-content: center;
+  }
+}
